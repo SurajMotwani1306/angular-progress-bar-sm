@@ -1,24 +1,50 @@
-# AngularProgressBarSm
+# angular-progress-bar-sm
+Stylish animated progress bar
+<br/>
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Angular Progress Bar SM"
+        src="projects/angular-dropdown-select/Screenshots/progress.gif" />
+        <p align="center">Use Animated Progressbars</p>
+    </td>
+   </tr>
+</table>
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project angular-progress-bar-sm` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-progress-bar-sm`.
-> Note: Don't forget to add `--project angular-progress-bar-sm` or else it will be added to the default project in your `angular.json` file. 
+```sh
+npm i angular-progress-bar-sm
+```
 
-## Build
+## Usage
 
-Run `ng build angular-progress-bar-sm` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Import
+```ts
+import { AngularProgressBarSmModule } from 'angular-progress-bar-sm';
+```
 
-## Publishing
+## Fundamental Usage
+```html
+<app-progress-bar [progressValue]="50" [progressBarColor]="'#000'" />
+```
 
-After building your library with `ng build angular-progress-bar-sm`, go to the dist folder `cd dist/angular-progress-bar-sm` and run `npm publish`.
+## Fundamentals / Mandatories
 
-## Running unit tests
+| Property/Method       |  Type   | Description                                                             |
+| ----------------------| :-----: | ---------------------------------------------------------------------------------- |
+| progressValue         | number  | Percentage of filled progress bar                                                  |
+| progressBarColor      | string  | Provide color single inverted comma's with hex color code or by default "#007bff"  |
 
-Run `ng test angular-progress-bar-sm` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Further help
+## Future Plans
+- [ ] Circular Progress Bar
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Author
+Suraj Motwani - Email: suraj.motwani1306@gmail.com
+
+## License
+
+Angular Progress Bar SM is available under the MIT license. See the LICENSE file for more info.
+

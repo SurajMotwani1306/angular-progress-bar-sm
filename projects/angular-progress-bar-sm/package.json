@@ -1,6 +1,6 @@
 {
   "name": "angular-progress-bar-sm",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0"
@@ -8,5 +8,26 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "description": "Stylish animated progress bar",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SurajMotwani1306/angular-progress-bar-sm.git"
+  },
+  "keywords": [
+    "angular-progress-bar",
+    "progress-bar",
+    "angular",
+    "progress",
+    "bar",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Suraj Motwani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SurajMotwani1306/angular-progress-bar-sm/issues"
+  },
+  "homepage": "https://github.com/SurajMotwani1306/angular-progress-bar-sm#readme"
 }

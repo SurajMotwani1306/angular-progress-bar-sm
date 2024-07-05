@@ -1,27 +1,50 @@
-# WorkspaceAngularProgressBarSm
+# angular-progress-bar-sm
+Stylish animated progress bar
+<br/>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Angular Progress Bar SM"
+        src="projects/angular-dropdown-select/Screenshots/progress.gif" />
+        <p align="center">Use Animated Progressbars</p>
+    </td>
+   </tr>
+</table>
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```sh
+npm i angular-progress-bar-sm
+```
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Import
+```ts
+import { AngularProgressBarSmModule } from 'angular-progress-bar-sm';
+```
 
-## Build
+## Fundamental Usage
+```html
+<app-progress-bar [progressValue]="50" [progressBarColor]="'#000'" />
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Fundamentals / Mandatories
 
-## Running unit tests
+| Property/Method       |  Type   | Description                                                             |
+| ----------------------| :-----: | ---------------------------------------------------------------------------------- |
+| progressValue         | number  | Percentage of filled progress bar                                                  |
+| progressBarColor      | string  | Provide color single inverted comma's with hex color code or by default "#007bff"  |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Future Plans
+- [ ] Circular Progress Bar
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Author
+Suraj Motwani - Email: suraj.motwani1306@gmail.com
 
-## Further help
+## License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Angular Progress Bar SM is available under the MIT license. See the LICENSE file for more info.
+
