@@ -6,7 +6,7 @@ Stylish animated progress bar
   <tr>
     <td align="center">
       <img alt="Angular Progress Bar SM"
-        src="projects/angular-progress-bar-sm/Screenshots/progress.gif" />
+        src="./src/lib/Screenshots/progress.gif" />
         <p align="center">Use Animated Progressbars</p>
     </td>
    </tr>
