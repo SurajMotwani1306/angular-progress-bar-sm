@@ -7,7 +7,10 @@ Stylish animated progress bar
     <td align="center">
       <img alt="Angular Progress Bar SM"
         src="./projects/angular-progress-bar-sm/src/lib/Screenshots/progress.gif" />
-        <p align="center">Use Animated Progressbars</p>
+    </td>
+    <td align="center">
+      <img alt="Angular Progress Bar SM"
+        src="./projects/angular-progress-bar-sm/src/lib/Screenshots/circular.PNG" />
     </td>
    </tr>
 </table>
@@ -27,7 +30,11 @@ import { AngularProgressBarSmModule } from 'angular-progress-bar-sm';
 
 ## Fundamental Usage
 ```html
-<app-progress-bar [progressValue]="50" [progressBarColor]="'#000'" />
+<app-progress-bar 
+    [progressValue]="50" 
+    [progressColor]="'#000'" 
+    [progressBarType]="bar"
+/>
 ```
 
 ## Fundamentals / Mandatories
@@ -36,10 +43,11 @@ import { AngularProgressBarSmModule } from 'angular-progress-bar-sm';
 | ----------------------| :-----: | ---------------------------------------------------------------------------------- |
 | progressValue         | number  | Percentage of filled progress bar                                                  |
 | progressBarColor      | string  | Provide color single inverted comma's with hex color code or by default "#007bff"  |
+| progressBarType       | string  | By default: 'bar' or can be 'circle'                                               |
 
 
 ## Future Plans
-- [ ] Circular Progress Bar
+- [ ] Animated filled portion of progress bar.
 
 ## Author
 Suraj Motwani - Email: suraj.motwani1306@gmail.com

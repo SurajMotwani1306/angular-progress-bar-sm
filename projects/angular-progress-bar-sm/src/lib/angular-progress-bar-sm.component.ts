@@ -8,14 +8,21 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 export class AngularProgressBarSmComponent implements OnChanges {
 
   @Input() progressValue: number = 0;
-  @Input() progressBarColor: string = '#007bff';
+  @Input() progressBarType: string = 'bar';
+  circumference: any;
+  strokeDashOffset: any;
+  progressColor: string = '';
   barWidth = 0;
 
   ngOnInit(){
+    if(this.progressBarType === 'circle'){
+      this.circumference= (2 * 3.14 * 45);
+      this.strokeDashOffset = this.circumference * (1- (this.progressValue/100));
+    }
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['progressValue']) {
+    if (changes['progressValue'] && this.progressBarType === 'bar') {
       this.barWidth = this.progressValue;
     }
   }
