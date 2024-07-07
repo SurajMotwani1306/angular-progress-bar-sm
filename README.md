@@ -30,7 +30,7 @@ import { AngularProgressBarSmModule } from 'angular-progress-bar-sm';
 
 ## Fundamental Usage
 ```html
-<app-progress-bar 
+<lib-angular-progress-bar-sm 
     [progressValue]="50" 
     [progressColor]="'#000'" 
     [progressBarType]="bar"
