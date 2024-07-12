@@ -4,6 +4,7 @@
   border-radius: 25px;
   overflow: hidden;
   position: relative;
+  padding-right: 6px;
 }
 
 .progress-bar {
