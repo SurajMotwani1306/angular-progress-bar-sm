@@ -16,7 +16,7 @@ export class AngularProgressBarSmComponent implements OnChanges {
 
   ngOnInit(){
     if(this.progressBarType === 'circle'){
-      this.progressValue = this.progressValue > 100 ? 100 : this.progressValue;
+      this.progressValue = this.progressValue > 100 ? 100 : (this.progressValue < 0 ? 0 : this.progressValue);
       this.circumference= (2 * 3.14 * 45);
       this.strokeDashOffset = this.circumference * (1- (this.progressValue/100));
     }
