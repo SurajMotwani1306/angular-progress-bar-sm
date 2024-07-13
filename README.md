@@ -32,18 +32,18 @@ import { AngularProgressBarSmModule } from 'angular-progress-bar-sm';
 ```html
 <lib-angular-progress-bar-sm 
     [progressValue]="50" 
-    [progressColor]="'#000'" 
-    [progressBarType]="bar"
+    [progressColor]="'#000'"    <!-- values '#000' or 'black' must be string -->
+    [progressBarType]="'bar'"   <!-- values 'bar' or 'circle' must be string -->
 />
 ```
 
 ## Fundamentals / Mandatories
 
 | Property/Method       |  Type   | Description                                                             |
-| ----------------------| :-----: | ---------------------------------------------------------------------------------- |
-| progressValue         | number  | Percentage of filled progress bar                                                  |
-| progressBarColor      | string  | Provide color single inverted comma's with hex color code or by default "#007bff"  |
-| progressBarType       | string  | By default: 'bar' or can be 'circle'                                               |
+| ----------------------| :-----: | -------------------------------------------------------------------------------------------- |
+| progressValue         | number  | Percentage of filled progress bar                                                            |
+| progressBarColor      | string  | Provide color single inverted comma's with hex color code or by default "#007bff" (Optional) |
+| progressBarType       | string  | By default: 'bar' or can be 'circle' (Optional)                                              |
 
 
 ## Future Plans
