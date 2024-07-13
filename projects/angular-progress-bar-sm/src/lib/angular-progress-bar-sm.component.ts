@@ -9,9 +9,9 @@ export class AngularProgressBarSmComponent implements OnChanges {
 
   @Input() progressValue: number = 0;
   @Input() progressBarType: string = 'bar';
+  @Input() progressColor: string = '';
   circumference: any;
   strokeDashOffset: any;
-  progressColor: string = '';
   barWidth = 0;
 
   ngOnInit(){

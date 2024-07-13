@@ -10,7 +10,7 @@
     "build-library": "ng build angular-progress-bar-sm",
     "pack-library": "cd dist/angular-progress-bar-sm && npm pack",
     "final": "ng build angular-progress-bar-sm && cd dist/angular-progress-bar-sm && npm pack",
-    "publish": "npm publish dist/angular-progress-bar-sm/angular-progress-bar-sm-1.1.3.tgz --access public"
+    "publish": "npm publish dist/angular-progress-bar-sm/angular-progress-bar-sm-1.1.4.tgz --access public"
   },
   "private": true,
   "dependencies": {
