@@ -13,6 +13,17 @@ Stylish animated progress bar
         src="./projects/angular-progress-bar-sm/src/lib/Screenshots/circular.PNG" />
     </td>
    </tr>
+   <tr>
+    <td align="center">
+      <img alt="Angular Progress Bar SM"
+        src="./projects/angular-progress-bar-sm/src/lib/Screenshots/bar-animated.gif" />
+        <p align="center">Make it Animated by below mentioned code</p>
+    </td>
+    <td align="center">
+      <img alt="Angular Progress Bar SM"
+        src="./projects/angular-progress-bar-sm/src/lib/Screenshots/circle-animated.gif" />
+    </td>
+   </tr>
 </table>
 
 ## Installation
@@ -35,6 +46,19 @@ import { AngularProgressBarSmModule } from 'angular-progress-bar-sm';
     [progressColor]="'#000'"    <!-- values '#000' or 'black' must be string -->
     [progressBarType]="'bar'"   <!-- values 'bar' or 'circle' must be string -->
 />
+```
+
+### To make it Animated:
+Start passing dynamic values in your project & use [progressValue] = "progressValue"
+
+```ts
+ let intervalValue = setInterval(() => {
+    this.progressValue += 1;
+
+    if(this.progressValue === 100){
+      this.progressValue = 0;
+    }
+  },100)
 ```
 
 ## Fundamentals / Mandatories
