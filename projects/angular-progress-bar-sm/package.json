@@ -1,6 +1,6 @@
 {
   "name": "angular-progress-bar-sm",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0"
