@@ -14,17 +14,17 @@ export class AngularProgressBarSmComponent implements OnChanges {
   strokeDashOffset: any;
   barWidth = 0;
 
-  ngOnInit(){
-    if(this.progressBarType === 'circle'){
-      this.progressValue = this.progressValue > 100 ? 100 : (this.progressValue < 0 ? 0 : this.progressValue);
-      this.circumference= (2 * 3.14 * 45);
-      this.strokeDashOffset = this.circumference * (1- (this.progressValue/100));
-    }
-  }
+  ngOnInit(){}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['progressValue'] && this.progressBarType === 'bar') {
       this.barWidth = this.progressValue;
+    }
+
+    if(changes['progressValue'] && this.progressBarType === 'circle'){
+      this.progressValue = this.progressValue > 100 ? 100 : (this.progressValue < 0 ? 0 : this.progressValue);
+      this.circumference= (2 * 3.14 * 45);
+      this.strokeDashOffset = this.circumference * (1- (this.progressValue/100));
     }
   }
 }
