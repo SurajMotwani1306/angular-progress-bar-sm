@@ -1,4 +1,4 @@
-# angular-progress-bar-sm
+# Angular Progress Bar SM
 Stylish animated progress bar
 <br/>
 

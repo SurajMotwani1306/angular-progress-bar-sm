@@ -10,9 +10,8 @@
     "build-library": "ng build angular-progress-bar-sm",
     "pack-library": "cd dist/angular-progress-bar-sm && npm pack",
     "final": "ng build angular-progress-bar-sm && cd dist/angular-progress-bar-sm && npm pack",
-    "publish": "npm publish dist/angular-progress-bar-sm/angular-progress-bar-sm-1.1.7.tgz --access public"
+    "publish": "npm publish dist/angular-progress-bar-sm/angular-progress-bar-sm-1.1.8.tgz --access public"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.0",
     "@angular/common": "^17.3.0",
@@ -48,6 +47,13 @@
   },
   "keywords": [
     "angular-progress-bar-sm",
+    "Angular Progress Bar SM",
+    "Angular Progress Bar",
+    "Angular Progress",
+    "Progress Bar SM",
+    "Progress Bar",
+    "ProgressBar",
+    "Progressbar",
     "angular-progress-bar",
     "progress-bar",
     "angular",
